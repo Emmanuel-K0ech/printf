@@ -69,10 +69,9 @@ long int convert_size_numberr(long int num, int size)
 }
 
 /**
- * convert_size_unsgndd - Casts a number to the specified size
+ * convert_size_unsgndd - Casts a number to thee specified size
  * @num: Number to be casted
  * @size: Number indicating the type to be casted
- *
  * Return: Casted value of num
  */
 long int convert_size_unsgndd(unsigned long int num, int size)

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_charr - Prints a char
+ * print_charr - Prints a character
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -71,7 +71,7 @@ int printt_string(va_list types, char buffer[],
 	return (write(1, str, length));
 }
 /**
- * printt_percent - Prints a percent sign
+ * printt_percent - Prints a percent sign to output
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -92,7 +92,7 @@ int printt_percent(va_list types, char buffer[],
 	return (write(1, "%%", 1));
 }
 /**
- * printt_int - Print int
+ * printt_int - Print integer (int)
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -133,10 +133,8 @@ int printt_int(va_list types, char buffer[],
 
 	return (write_numberr(is_negative, i, buffer, flags, width, precision, size));
 }
-
-/************************* PRINT BINARY *************************/
 /**
- * printt_binary - Prints an unsigned number
+ * printt_binary - Prints an unsigned number - output
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
